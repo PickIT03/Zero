@@ -17,19 +17,20 @@
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="80sp" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/top_bend_white"
+        android:layout_alignParentBottom="true"
         android:layout_marginTop="@dimen/_150sdp"
-        android:layout_alignParentBottom="true">
+        android:background="@drawable/top_bend_white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:orientation="vertical"
             android:layout_marginTop="@dimen/_30sdp"
+            android:orientation="vertical"
             android:padding="20dp">
 
             <TextView
@@ -114,33 +115,33 @@
                 android:text="Login"
                 android:textColor="@color/white"
                 android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:orientation="horizontal">
 
-            <LinearLayout
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/signup"
-                android:layout_marginTop="@dimen/_60sdp"
-                android:orientation="horizontal">
+                android:layout_weight="1"
+                android:text="Don't have an account? "
+                android:textAlignment="textEnd"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14ssp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Don't have an account? "
-                    android:textAlignment="textEnd"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_14ssp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2"
-                    android:text="Sign Up"
-                    android:textAlignment="textStart"
-                    android:textColor="@color/black"
-                    android:textSize="@dimen/_18ssp"
-                    android:textStyle="bold" />
-            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Sign Up"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>
