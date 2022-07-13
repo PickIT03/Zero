@@ -117,6 +117,93 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:text="Career"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp" />
+
+                            <!--                            <ImageView-->
+                            <!--                                android:layout_width="wrap_content"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:paddingStart="@dimen/_5sdp"-->
+                            <!--                                android:paddingEnd="@dimen/_2sdp"-->
+                            <!--                                android:src="@drawable/ic_baseline_stars_black" />-->
+
+                            <!--                            <TextView-->
+                            <!--                                android:layout_width="match_parent"-->
+                            <!--                                android:layout_height="wrap_content"-->
+                            <!--                                android:layout_weight="1"-->
+                            <!--                                android:text="Point"-->
+                            <!--                                android:textColor="@color/black"-->
+                            <!--                                android:textSize="@dimen/_14ssp"-->
+                            <!--                                android:textStyle="bold" />-->
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:text="MCQ"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_ash"
+                            android:textSize="@dimen/_14ssp" />
+
+                        <TextView
+                            android:id="@+id/solved_count_carrer_mcq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/round_bg"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="875"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Solved Count"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_ash"
+                            android:textSize="@dimen/_12ssp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.3"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
                                 android:layout_weight="1"
                                 android:text="1"
                                 android:textStyle="bold"
@@ -362,6 +449,93 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_10sdp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/_5sdp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1.3"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_10sdp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Career"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_14ssp" />
+
+<!--                            <ImageView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:paddingStart="@dimen/_5sdp"-->
+<!--                                android:paddingEnd="@dimen/_2sdp"-->
+<!--                                android:src="@drawable/ic_baseline_stars_black" />-->
+
+<!--                            <TextView-->
+<!--                                android:layout_width="match_parent"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_weight="1"-->
+<!--                                android:text="Point"-->
+<!--                                android:textColor="@color/black"-->
+<!--                                android:textSize="@dimen/_14ssp"-->
+<!--                                android:textStyle="bold" />-->
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:text="SOLVE"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_ash"
+                            android:textSize="@dimen/_14ssp" />
+
+                        <TextView
+                            android:id="@+id/solved_count_carrer_solve"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/round_bg"
+                            android:paddingStart="@dimen/_10sdp"
+                            android:paddingEnd="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_5sdp"
+                            android:paddingBottom="@dimen/_5sdp"
+                            android:text="768"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/_14ssp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Solved Count"
+                            android:textAlignment="center"
+                            android:textColor="@color/dark_ash"
+                            android:textSize="@dimen/_12ssp" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
