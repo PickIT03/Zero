@@ -19,16 +19,16 @@ public class HomePage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-        LinearLayout logout=findViewById(R.id.logout_linear);
+        LinearLayout logout = findViewById(R.id.logout_linear);
         logout.setOnClickListener(view -> {
-            new MaterialAlertDialogBuilder(this,R.style.AlertDialogTheme)
-                    .setTitle("Logout")
+            AlertDialog.Builder builder=new AlertDialog.Builder(HomePage.this);
+            builder.setTitle("Logout")
                     .setMessage("Are you sure want to logout !")
                     .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialogInterface, int i) {
                             dialogInterface.dismiss();
-                            startActivity(new Intent(HomePage.this,LoginActivity.class));
+                            startActivity(new Intent(HomePage.this, LoginActivity.class));
                             finish();
                         }
                     })
@@ -37,15 +37,16 @@ public class HomePage extends AppCompatActivity {
                         public void onClick(DialogInterface dialogInterface, int i) {
                             dialogInterface.dismiss();
                         }
-                    })
-                    .show();
+                    });
+            AlertDialog dialog=builder.create();
+            dialog.show();
         });
-        RelativeLayout mcqOpen=findViewById(R.id.mcq_open);
-        RelativeLayout mcqClose=findViewById(R.id.mcq_close);
-        RelativeLayout solveOpen=findViewById(R.id.solve_open);
-        RelativeLayout solveClose=findViewById(R.id.solve_close);
-        LinearLayout mcq=findViewById(R.id.mcq);
-        LinearLayout solve=findViewById(R.id.solve);
+        RelativeLayout mcqOpen = findViewById(R.id.mcq_open);
+        RelativeLayout mcqClose = findViewById(R.id.mcq_close);
+        RelativeLayout solveOpen = findViewById(R.id.solve_open);
+        RelativeLayout solveClose = findViewById(R.id.solve_close);
+        LinearLayout mcq = findViewById(R.id.mcq);
+        LinearLayout solve = findViewById(R.id.solve);
         mcqClose.setOnClickListener(view -> {
             mcq.setVisibility(View.GONE);
             mcqOpen.setVisibility(View.VISIBLE);
@@ -66,5 +67,20 @@ public class HomePage extends AppCompatActivity {
             solveClose.setVisibility(View.VISIBLE);
             solveOpen.setVisibility(View.GONE);
         });
+        LinearLayout MCQ1StarPoint = findViewById(R.id.mcq_1_star_point);
+        LinearLayout MCQ5StarPoint = findViewById(R.id.mcq_5_star_point);
+        LinearLayout MCQ10StarPoint = findViewById(R.id.mcq_10_star_point);
+        LinearLayout MCQCareer = findViewById(R.id.mcq_career);
+        MCQ1StarPoint.setOnClickListener(view -> {
+            startActivity(new Intent(HomePage.this, MCQ1StarPointActivity.class));
+        });
+        MCQ5StarPoint.setOnClickListener(view -> {
+            startActivity(new Intent(HomePage.this, MCQ5StarPointsActivity.class));
+        });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
     }
 }

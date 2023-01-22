@@ -10,12 +10,17 @@
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/drawable/cursor.xml" value="0.1435" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/drawable/ic_baseline_stars.xml" value="0.1435" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/drawable/ic_baseline_stars_black.xml" value="0.1435" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/drawable/next_bg.xml" value="0.125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/drawable/optionbar_bg.xml" value="0.1435" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/drawable/previous_bg.xml" value="0.125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/drawable/round_bg.xml" value="0.1435" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/drawable/toolbar_bg.xml" value="0.125" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/drawable/top_bend_white.xml" value="0.1435" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/layout/activity_home_page.xml" value="0.18" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/layout/activity_login.xml" value="0.17447916666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/layout/activity_mcq1_star_point.xml" value="0.17447916666666666" />
+        <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/layout/activity_mcq5_star_points.xml" value="0.17447916666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/layout/activity_sign_up.xml" value="0.17447916666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/layout/activity_splash_screen.xml" value="0.17447916666666666" />
         <entry key="..\:/Users/HP/AndroidStudioProjects/Zero/app/src/main/res/layout/dropdown_list.xml" value="0.17447916666666666" />
@@ -24,7 +29,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

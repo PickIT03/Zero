@@ -9,7 +9,11 @@ import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
+
+import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
 
@@ -28,10 +32,26 @@ public class SignUpActivity extends AppCompatActivity {
         AutoCompleteTextView autoCompleteTextView=findViewById(R.id.autoCompleteTextView);
         autoCompleteTextView.setAdapter(arrayAdapter);
         Button signup=findViewById(R.id.signup);
+        TextInputEditText email_et=findViewById(R.id.email);
+        TextInputEditText name_et=findViewById(R.id.name);
+        TextInputEditText password_et=findViewById(R.id.password);
+        RadioGroup radio_grp=findViewById(R.id.radioGroup);
         signup.setOnClickListener(view -> {
             String dept=autoCompleteTextView.getText().toString().trim();
-            System.out.println(dept);
-            Toast.makeText(this, dept, Toast.LENGTH_SHORT).show();
+            String email=email_et.getText().toString().trim();
+            String name=name_et.getText().toString().trim();
+            String password=password_et.getText().toString().trim();
+            int id=radio_grp.getCheckedRadioButtonId();
+            RadioButton radioButton=findViewById(id);
+            String college=radioButton.getText().toString().trim();
+            Intent intent=new Intent(SignUpActivity.this,OTPEmailVerification.class);
+            intent.putExtra("EMAIL",email);
+            intent.putExtra("NAME",name);
+            intent.putExtra("PASSWORD",password);
+            intent.putExtra("COLLEGE",college);
+            intent.putExtra("DEPT",dept);
+            startActivity(intent);
+            finish();
         });
     }
 
